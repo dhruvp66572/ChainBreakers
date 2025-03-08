@@ -1,0 +1,111 @@
+/* Dashboard.css */
+
+.dashboard-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #343a40;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.75em;
+    color: #495057;
+    margin-bottom: 10px;
+}
+
+.transactions-list {
+    margin: 20px 0;
+    overflow-y: auto;
+    max-height: 400px; /* Set max height for scrolling */
+}
+
+.transaction-card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    transition: box-shadow 0.3s ease;
+}
+
+.transaction-card:hover {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.load-more-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.load-more-btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .dashboard-container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .load-more-btn {
+        font-size: 0.9em;
+    }
+
+    .transaction-card {
+        padding: 10px;
+    }
+
+    .transaction-card h3 {
+        font-size: 1.2em;
+    }
+
+    .transaction-card p {
+        font-size: 0.9em;
+        color: #000000;
+        line-height: 1.4;
+        margin: 5px 0;
+    }
+    
+    .dashboard-container {
+        color: #000000;
+    }
+    
+    .transaction-card .transaction-title {
+        font-weight: 600;
+        color: #000000;
+    }
+    
+    .transaction-card .transaction-amount {
+        font-weight: 700;
+        color: #000000;
+    }
+    
+    .transaction-card .transaction-date {
+        font-style: italic;
+        color: #333333;
+    }
+}
