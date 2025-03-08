@@ -1,11 +1,13 @@
 // client/src/App.js
 import React from 'react';
-import Dashboard from './components/Dashboard1';
+// import Dashboard from './components/Dashboard1';
+import EthereumDashboard from './components/EthereumDashboard';
 
 const App = () => {
     return (
         <div className="App">
-            <Dashboard />
+            {/* <Dashboard /> */}
+            <EthereumDashboard />
         </div>
     );
 };
